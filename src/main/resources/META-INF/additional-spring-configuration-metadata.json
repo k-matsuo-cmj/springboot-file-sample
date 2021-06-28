@@ -1,0 +1,5 @@
+{"properties": [{
+  "name": "file-app.filedir",
+  "type": "java.lang.String",
+  "description": "upload folder path"
+}]}

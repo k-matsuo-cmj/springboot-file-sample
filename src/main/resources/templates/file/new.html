@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Sample</title>
+</head>
+
+<body>
+    <div>
+        <form enctype="multipart/form-data" th:action="@{/files}" th:method="post" th:object="${filePost}">
+            <div>
+                <label for="description">説明：</label>
+                <textarea rows="4" th:field="*{description}"></textarea>
+            </div>
+            <div>
+                <input type="file" name="file">
+            </div>
+            <button type="submit">投稿</button>
+        </form>
+    </div>
+</body>
+
+</html>
